@@ -20,7 +20,7 @@ body{
     position: relative;
     background-color: #fff;
     border-radius: 20px;
-    width: min(600px, 95%);
+    width: min(500px, 95%);
     margin: auto;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
     -10px -10px 10px white;
