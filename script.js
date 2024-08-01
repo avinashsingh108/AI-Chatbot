@@ -2,13 +2,8 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatBox = document.querySelector(".chatbox");
 const resetBtn = document.querySelector(".reset");
+const apiKey = "AIzaSyATKp3NHwEThKz4hFCqiBEsSgKCVqGYctU";
 let userMessage;
-let apiKey;
-fetch('/.netlify/functions/getApiKey')
-    .then(response => response.json())
-    .then(data => {
-        apiKey = data.apiKey;
-    });
 
 const scrollToBottom = () => {
   chatBox.scrollTop = chatBox.scrollHeight;
