@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.chatbot {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    width: min(600px, 95%);
+    margin: auto;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+}
+.chatbot header {
+    padding: 8px 20px;
+    background-color: aquamarine;
+    text-align: center;
+    border-radius: 20px 20px 0  0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.chatbot header h2 {
+    text-align: center;
+    margin: auto;
+    width: 95%;
+}
+.chatbot header span {
+    cursor: pointer;
+}
+.chatbot .chatbox {
+    height: 500px;
+    padding: 40px 20px 100px;
+    overflow-y: auto;
+}
+.chat {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+.chatbox .outgoing {
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.chatbox .chat p {
+    white-space: pre-wrap;
+}
+.chatbox .incoming p {
+    background-color: rgb(234, 234, 234);
+    padding: 10px 20px;
+    border-radius: 25px 25px 25px 0;
+    max-width: 80%;
+}
+.chatbox .outgoing p {
+    background-color: aquamarine;
+    padding: 10px 20px;
+    border-radius: 25px 25px 0px 25px;
+    max-width: 80%;
+}
+.chatbot .chat-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 20px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+.chat-input textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    height: 50px;
+    padding: 10px 5px;
+    font-size: 1rem;
+}
+.chat-input span {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.chat-input textarea:valid ~ span {
+    visibility: visible;
+}
